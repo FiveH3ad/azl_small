@@ -883,8 +883,8 @@
             "monitorRepo": "https://raw.githubusercontent.com/Azure/azure-monitor-baseline-alerts/2023-11-14/"
         },
         "azPrivateDnsPolicyAssignmentMapping": {
-            "https://management.azure.com/": "managementGroupTemplates/policyAssignments/DINE-PrivateDNSZonesPolicyAssignment.json",
-            "https://management.usgovcloudapi.net": "managementGroupTemplates/policyAssignments/gov/fairfaxDINE-PrivateDNSZonesPolicyAssignment.json"
+            "https://management.azure.com/": "https://raw.githubusercontent.com/Azure/Enterprise-Scale/main/eslzArm/managementGroupTemplates/policyAssignments/DINE-PrivateDNSZonesPolicyAssignment.json",
+            "https://management.usgovcloudapi.net": "https://raw.githubusercontent.com/Azure/Enterprise-Scale/main/eslzArm/managementGroupTemplates/policyAssignments/gov/fairfaxDINE-PrivateDNSZonesPolicyAssignment.json"
         },
         "azPrivateDnsPolicyAssignment": "[variables('azPrivateDnsPolicyAssignmentMapping')[environment().resourceManager]]",
         "deploymentUris": {
