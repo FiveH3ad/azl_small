@@ -1079,10 +1079,10 @@
             "dataCollectionRuleMdfcDefenderSQLLiteDeploymentName": "[take(concat('alz-DataCollectionRuleDefenderSQLLite', variables('deploymentSuffix')), 64)]"
         },
         "platformRgNames": {
-            "mgmtRg": "rg-shared-001",
-            "connectivityRg": "rg-network-001",
+            "mgmtRg": "rg-prod-shared-001",
+            "connectivityRg": "rg-prod-network-001",
             "ddosRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-ddos')]",
-            "privateDnsRg": "rg-network-002",
+            "privateDnsRg": "rg-prod-network-002",
             "identityVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]",
             "lzVnetRg": "[concat(parameters('enterpriseScaleCompanyPrefix'), '-vnet-', parameters('connectivityLocation'))]"
         },
